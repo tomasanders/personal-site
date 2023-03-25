@@ -2,10 +2,10 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 
 export const NavTabs = () => {
   return (
-    <Tabs>
+    <Tabs variant='enclosed-colored'>
       <TabList>
-        <Tab>portfolio.js</Tab>
-        <Tab>README.md</Tab>
+        <Tab _selected={{ borderBottom: '1px', borderColor: 'green.300' }}>portfolio.js</Tab>
+        <Tab _selected={{ borderBottom: '1px', borderColor: 'green.300' }}>README.md</Tab>
       </TabList>
 
       <TabPanels>

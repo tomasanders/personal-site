@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="stylesheet" href="../styles/globals.css" />
       </Head>
       <main>
-        <Box display='flex' flexDir='column' h='full' bgColor='blue.200'>
+        <Box display='flex' flexDir='column' h='full'>
           <TitleBar />
           <ContentWrapper />
         </Box>
