@@ -1,3 +1,4 @@
+import { ContentWrapper } from '@/components/ContentWrapper';
 import { TitleBar } from '@/components/TitleBar';
 import { Box } from '@chakra-ui/react';
 import Head from 'next/head';
@@ -15,6 +16,7 @@ export default function Home() {
       <main>
         <Box display='flex' flexDir='column' h='full' bgColor='blue.200'>
           <TitleBar />
+          <ContentWrapper />
         </Box>
       </main>
     </>
