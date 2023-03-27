@@ -1,6 +1,3 @@
-import { ContentWrapper } from '@/components/ContentWrapper';
-import { TitleBar } from '@/components/TitleBar';
-import { Box } from '@chakra-ui/react';
 import Head from 'next/head';
 
 export default function Home() {
@@ -14,10 +11,6 @@ export default function Home() {
         <link rel="stylesheet" href="../styles/globals.css" />
       </Head>
       <main>
-        <Box display='flex' flexDir='column' h='full'>
-          <TitleBar />
-          <ContentWrapper />
-        </Box>
       </main>
     </>
   );
