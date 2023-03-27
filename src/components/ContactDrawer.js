@@ -21,11 +21,11 @@ export const ContactDrawer = () => {
   return (
     <>
       <button onClick={handleOpen}>
-        <BsChatLeftDots className="text-4xl text-sideIcon" />
+        <BsChatLeftDots className="text-3xl text-sideIcon" />
       </button>
 
       {isOpen &&
-        <div className={`flex flex-col bg-sideBg top-0 left-0 w-4/5 h-full z-20 text-sideIcon p-4 gap-8 absolute ${!isOpen && '-translate-x-full' }`}>
+        <div className={`flex flex-col bg-sideBg top-0 left-0 w-4/5 h-full z-20 text-sideIcon p-4 gap-8 absolute shadow ${!isOpen && '-translate-x-full' }`}>
 
           <div className="flex justify-between border-b border-sideIcon pb-2">
             <h2 className="text-lg">contact me</h2>

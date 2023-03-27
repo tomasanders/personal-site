@@ -12,13 +12,13 @@ module.exports = {
     extend: {
       colors: {
         'd-tabBg': '#241B2F',
-        'tabBg': '#F3F3F3',
+        'tabBg': '#DDDDDD',
         'd-tabText': '#EEEDEF',
         'tabText': '#474B50',
         'd-tabActive': '#840084',
         'tabActive': '#2C2C2C',
         'd-sideBg': '#181520',
-        'sideBg': '#F6F8FA',
+        'sideBg': '#E1ECF9',
         'd-sideIcon': '#A2A1A5',
         'sideIcon': '#545557',
         'd-ideBg': '#262335',

@@ -7,10 +7,10 @@ import { ContactDrawer } from './ContactDrawer';
 
 export const SideNav = () => {
   return (
-    <div className="flex flex-col bg-sideBg py-4 px-2 text-sideIcon">
+    <div className="bg-sideBg text-sideIcon flex flex-col items-center py-2 row-start-2 row-span-full col-start-1 col-span-1">
       <ContactDrawer />
 
-      <div className="flex flex-col gap-4 text-4xl mt-auto">
+      <div className="flex flex-col gap-4 text-3xl mt-auto">
         <Link href='/resume' target='_blank'>
           <IoDocumentTextOutline />
         </Link>
