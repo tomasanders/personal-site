@@ -8,7 +8,7 @@ export const ReadmeLine = (props) => {
       <div className={`flex items-center pr-1 text-xl ${props.isBlank && 'opacity-0'}`}>{props.icon === 'down' ? <BiChevronDown /> : <BiChevronRight />}</div>
 
 
-        {props.content && (props.isHeader ? (props.h2 ? <h2>{props.content}</h2> : <h3>{props.content}</h3>) : <p className={props.isComment && 'text-comment'}>{props.content}</p>)}
+        {props.content && (props.isHeader ? (props.h2 ? <h2>{props.content}</h2> : <h3>{props.content}</h3>) : <p className={props.isComment && 'text-d-comment'}>{props.content}</p>)}
     </div>
   );
 };
