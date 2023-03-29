@@ -17,10 +17,10 @@ export const ReadmeHeyBlock = () => {
 
   return (
     <div onClick={toggleCollapsed}>
-      <ReadmeLine lineNumber={3} icon={icon} isHeader h2 content="## Hey There!" />
+      <ReadmeLine lineNumber={3} low icon={icon} isHeader h2 content="## Hey There!" />
 
       <div className={collapsed && 'hidden'}>
-        <ReadmeLine lineNumber={4} isBlank content="My name is Tom, and I'm a front-end developer. Thanks for stopping by" />
+        <ReadmeLine lineNumber={4} low isBlank content="My name is Tom, and I'm a front-end developer. Thanks for stopping by" />
       </div>
     </div>
   );
