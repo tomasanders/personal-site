@@ -1,7 +1,7 @@
 export const Portfolio = () => {
   return (
     <div>
-      portfolio content
+      portfolio
     </div>
   );
 };

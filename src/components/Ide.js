@@ -11,13 +11,13 @@ export const Ide = () => {
 
   return (
     <main className="ide-grid">
-      <div className="grid col-span-full row-span-1 place-items-center bg-sideBg text-sideIcon text-lg">
+      <div className="grid row-span-1 text-lg col-span-full place-items-center bg-sideBg text-sideIcon">
         <h2>tom-sanders-portfolio</h2>
       </div>
 
       <SideNav />
 
-      <ul className="bg-sideBg flex col-start-2 col-span-full row-start-2 row-span-1">
+      <ul className="flex col-start-2 row-span-1 row-start-2 bg-sideBg col-span-full">
         <li className={`px-4 py-1 bg-tabBg text-tabText flex gap-2 items-center border-b ${activeTab === 'portfolio' ? 'border-tabActive' : 'border-transparent'}`} onClick={() => setActiveTab('portfolio')}>
           <SiJavascript className="text-black" />
           portfolio.js
@@ -29,7 +29,7 @@ export const Ide = () => {
         </li>
       </ul>
 
-      <div className="overflow-y-scroll col-start-2 col-span-full row-start-3 row-span-full">
+      <div className="col-start-2 row-start-3 p-2 overflow-scroll font-mono ide-content col-span-full row-span-full text-md text-text">
         {activeTab === 'portfolio' && <Portfolio />}
         {activeTab === 'readme' && <Readme />}
       </div>

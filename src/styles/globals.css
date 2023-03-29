@@ -5,6 +5,12 @@
 .ide-grid {
   display: grid;
   height: 100vh;
+  width: 100vw;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(16, 1fr);
+}
+
+.ide-content {
+  display: flex;
+  flex-direction: column;
 }
