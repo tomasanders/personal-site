@@ -1,10 +1,7 @@
-import { useState } from 'react';
-import { BiChevronDown, BiChevronRight } from 'react-icons/bi';
-import { ReadmeLine } from './ReadmeLine';
-import { ReadmeBlock } from './ReadmeBlock';
-import { ReadmeHeyBlock } from './ReadmeHeyBlock';
-import { ReadmeAboutMeBlock } from './ReadmeAboutMeBlock';
-import { ReadmeAboutSiteBlock } from './ReadmeAboutSiteBlock';
+import { ReadmeLine } from './Readme/ReadmeLine';
+import { ReadmeHeyBlock } from './Readme/ReadmeHeyBlock';
+import { ReadmeAboutMeBlock } from './Readme/ReadmeAboutMeBlock';
+import { ReadmeAboutSiteBlock } from './Readme/ReadmeAboutSiteBlock';
 
 export const Readme = () => {
   return (
