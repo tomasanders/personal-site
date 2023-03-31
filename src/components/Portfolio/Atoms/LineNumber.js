@@ -1,3 +1,5 @@
+// Returns the line number with an optional blank '0' if the number is low
+
 export const LineNumber = (props) => {
   return (
     <div className="flex text-right">

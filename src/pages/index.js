@@ -1,5 +1,6 @@
-import { Ide } from '@/components/Ide';
 import Head from 'next/head';
+
+import { Ide } from '@/components/Ide';
 
 export default function Home() {
   return (
@@ -11,7 +12,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="../styles/globals.css" />
       </Head>
-
       <Ide />
     </>
   );
