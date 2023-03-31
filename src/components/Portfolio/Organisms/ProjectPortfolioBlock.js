@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import { PortfolioLine } from "./PortfolioLine";
 
+const dots = <span className="text-xs tracking-tighter text-ide-gray">...</span>;
+
 export const ProjectPortfolioBlock = () => {
   const [collapsed, setCollapsed] = useState(true);
   const [icon, setIcon] = useState("right");
@@ -18,8 +20,9 @@ export const ProjectPortfolioBlock = () => {
 
   return (
     <>
-      <div onClick={toggleCollapsed}>
+      <div className="flex" onClick={toggleCollapsed}>
         <PortfolioLine topLevel lineNumber={13} icon={icon} indent={2} attribute="portfolioSite" open bracketColor="green" />
+        {collapsed && dots}
       </div>
 
       <div className={collapsed && "hidden"}>

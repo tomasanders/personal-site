@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import { PortfolioLine } from "./PortfolioLine";
 
+const dots = <span className="text-xs tracking-tighter text-ide-gray">...</span>;
+
 export const ProjectBunproBlock = () => {
   const [collapsed, setCollapsed] = useState(true);
   const [icon, setIcon] = useState("right");
@@ -18,8 +20,9 @@ export const ProjectBunproBlock = () => {
 
   return (
     <>
-      <div onClick={toggleCollapsed}>
+      <div className="flex" onClick={toggleCollapsed}>
         <PortfolioLine topLevel lineNumber={27} icon={icon} indent={2} attribute="bunproSrs" open bracketColor="green" />
+        {collapsed && dots}
       </div>
 
       <div className={collapsed && "hidden"}>

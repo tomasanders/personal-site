@@ -6,6 +6,8 @@ import { ProjectBunproBlock } from "./ProjectBunproBlock";
 import { ProjectHikaBlock } from "./ProjectHikaBlock";
 import { ProjectPortfolioBlock } from "./ProjectPortfolioBlock";
 
+const dots = <span className="text-xs tracking-tighter text-ide-gray">...</span>;
+
 export const ProjectsBlock = () => {
   const [collapsed, setCollapsed] = useState(true);
   const [icon, setIcon] = useState("right");
@@ -22,8 +24,9 @@ export const ProjectsBlock = () => {
 
   return (
     <>
-      <div onClick={toggleCollapsed}>
+      <div className="flex" onClick={toggleCollapsed}>
         <PortfolioLine topLevel lineNumber={12} icon={icon} indent={1} attribute="projects" open bracketColor="pink" />
+        {collapsed && dots}
       </div>
 
       <div className={collapsed && "hidden"}>

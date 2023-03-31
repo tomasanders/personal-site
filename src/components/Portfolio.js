@@ -4,6 +4,8 @@ import { PortfolioLine } from "./Portfolio/Organisms/PortfolioLine";
 import { ProjectsBlock } from "./Portfolio/Organisms/ProjectsBlock";
 import { SkillsBlock } from "./Portfolio/Organisms/SkillsBlock";
 
+const dots = <span className="text-xs tracking-tighter text-ide-gray">...</span>;
+
 export const Portfolio = () => {
   const [collapsed, setCollapsed] = useState(false);
   const [icon, setIcon] = useState("down");
@@ -22,8 +24,9 @@ export const Portfolio = () => {
     <>
       <PortfolioLine comment />
 
-      <div onClick={toggleCollapsed}>
+      <div className="flex" onClick={toggleCollapsed}>
         <PortfolioLine topLevel lineNumber={2} low icon={icon} variable="Tom" open bracketColor="yellow" />
+        {collapsed && dots}
       </div>
 
       <div className={collapsed && "hidden"}>

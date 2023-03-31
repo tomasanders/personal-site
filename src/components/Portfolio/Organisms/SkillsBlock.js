@@ -8,6 +8,8 @@ const librariesArray = ["React", "TypeScript", "jQuery", "Rails", "Tailwind CSS"
 
 const otherArray = ["I18n translation", "web accessibility", "testing with Vitest"];
 
+const dots = <span className="text-xs tracking-tighter text-ide-gray">...</span>;
+
 export const SkillsBlock = () => {
   const [collapsed, setCollapsed] = useState(true);
   const [icon, setIcon] = useState("right");
@@ -24,8 +26,9 @@ export const SkillsBlock = () => {
 
   return (
     <>
-      <div onClick={toggleCollapsed}>
+      <div className="flex" onClick={toggleCollapsed}>
         <PortfolioLine topLevel lineNumber={7} low icon={icon} indent={1} attribute="skills" open bracketColor="pink" />
+        {collapsed && dots}
       </div>
 
       <div className={collapsed && "hidden"}>
