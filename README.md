@@ -1,38 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Site
 
-## Getting Started
+I created this as a way to show some different things I think are neat, and more importantly, as a way to improve my knowledge of React, Next.js, and Tailwind CSS.
 
-First, run the development server:
+This site was written entirely in React and Tailwind CSS (albeit with some custom CSS classes here and there).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Concept
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I was aiming to sort of recreate the experience of looking at code in an IDE as a fun way to showcase my projects, and to break away from the normal portfolio site style.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Home
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The home page is a fun play on creating a class in JavaScript, and myself as an instance of that class.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+#### README
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Pretty simple here - just a blurb about myself.
 
-## Learn More
+#### Projects
 
-To learn more about Next.js, take a look at the following resources:
+I thought showing my projects with just the essential data as a JavaScript Object would be fun, while still giving all the relevant information.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Pretty standard contact form.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+##### Additional Challenges
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The main challenge I had was that I had this concept of what I wanted the site to look like, but I also wanted to make sure it was WCAG compliant. I used the WAVE Chrome extension to check for any issues and fixed them as I came across them.
