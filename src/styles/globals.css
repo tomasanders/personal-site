@@ -10,6 +10,27 @@
   width: 100vw;
 }
 
+@media only screen and (min-width: 769px) {
+  .ide-grid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .ide-grid {
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(26, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .ide-grid {
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(31, 1fr);
+  }
+}
+
 .ide-content {
   display: flex;
   flex-direction: column;

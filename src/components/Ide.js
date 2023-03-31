@@ -13,7 +13,7 @@ export const Ide = () => {
   return (
     <main className="ide-grid">
       <div className="grid row-span-1 text-lg col-span-full place-items-center bg-sideBg text-sideIcon">
-        <h2>tom-sanders-portfolio</h2>
+        <h1>tom-sanders-portfolio</h1>
       </div>
 
       <SideNav />

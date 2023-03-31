@@ -19,12 +19,12 @@ export const ContactDrawer = () => {
 
   return (
     <>
-      <button onClick={handleOpen}>
+      <button onClick={handleOpen} aria-label="open contact form">
         <BsChatLeftDots className="text-3xl text-sideIcon" />
       </button>
 
       {isOpen &&
-        <div className={`flex flex-col bg-sideBg top-0 left-0 w-4/5 h-full z-20 p-4 gap-8 absolute shadow ${!isOpen && '-translate-x-full' }`}>
+        <div className={`flex flex-col bg-sideBg top-0 left-0 w-4/5 h-full landscape:h-screen landscape:overflow-y-scroll z-20 p-4 gap-8 absolute shadow ${!isOpen && '-translate-x-full' }`}>
 
           <div className="flex justify-between pb-2 border-b border-sideIcon">
             <h2 className="text-lg text-ide-yellow">contact me</h2>
