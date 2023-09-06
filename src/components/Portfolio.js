@@ -34,9 +34,9 @@ export const Portfolio = () => {
 
         <PortfolioLine standardLine age lineNumber={4} low indent={1} attribute="age" />
 
-        <PortfolioLine standardLine lineNumber={5} low indent={1} attribute="location" value="Tokyo, Japan" />
+        <PortfolioLine standardLine lineNumber={5} low indent={1} attribute="location" value="Brighton, England" />
 
-        <PortfolioLine standardLine lineNumber={6} low indent={1} attribute="nextLocation" value="Brighton, England" />
+        <PortfolioLine standardLine lineNumber={6} low indent={1} attribute="prevLocation" value="Tokyo, Japan" />
 
         <SkillsBlock />
         <ProjectsBlock />
